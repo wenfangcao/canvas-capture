@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view>{{index ? '修片' : '原片'}}</view>
+  <button bindtap="changeImg">切换</button>
+  <image mode="widthFix" bindlongpress="longPress" data-src="{{img1}}" bindtap="previewImg" src="{{img1}}" hidden="{{index === 1}}" class="img"></image>
+  <image mode="widthFix" bindlongpress="longPress" data-src="{{img2}}" bindtap="previewImg" hidden="{{index === 0}}" src="{{img2}}" class="img"></image>
+  <view wx:key="{{index}}" style="top: {{item.pageY}}px; left: {{item.pageX}}px " wx:for="{{touchList}}" class="touchNote"></view>
+</view>

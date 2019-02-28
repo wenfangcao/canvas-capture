@@ -1,0 +1,12 @@
+/**index.wxss**/
+
+.img {
+  width: 730rpx;
+  margin-top: 20rpx;
+}
+
+.touchNote {
+  border: 10rpx solid red;
+  border-radius: 5px;
+  position: absolute;
+}
