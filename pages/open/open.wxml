@@ -1,6 +1,6 @@
-<movable-area class="movable-area" scale-area>
-    <movable-view  style="height: 50px; width: 50px; background: blue;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="10" scale-value="2">
-    <image bindtap='startTap' class="img" src="{{img}}"></image>
+
+  <movable-area class="movable-area" scale-area>
+    <movable-view  style="height: 50px; width: 50px; background: blue;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.1" scale-max="10" scale-value="2">
+      <image class="img" src="{{img}}"></image>
     </movable-view>
-  </movable-area>
-  
+</movable-area>

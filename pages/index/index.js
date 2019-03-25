@@ -36,10 +36,10 @@ Page({
       pageX,
       pageY
     })
+    console.log(e)
     console.log('pageX', pageX, ' pageY', pageY)
     this.setData({
       touchList: this.data.touchList
     })
-    console.log(this.data.touchList)
   }
 })

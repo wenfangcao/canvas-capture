@@ -1,0 +1,31 @@
+/* pages/canvas/canvas.wxss */
+.original-canvas {
+  z-index: 1;
+}
+.move-canvas {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.movable-area {
+  height: 100vh;
+  width: 100vw;
+  background: gray;
+  /* margin-left: -100vw;
+  margin-top: -100vh; */
+}
+.img {
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.toggle-btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}

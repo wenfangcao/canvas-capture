@@ -1,0 +1,37 @@
+/* pages/open/open.wxss */
+.movable-area {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.line-view {
+  width: 0;
+  height: 0;
+}
+.line {
+  width: 295px;
+  height: 413px;
+  border: 2px dashed gray;
+  position: absolute;
+  z-index: 2;
+}
+.line-img {
+  width: 540rpx;
+  height: 540rpx;
+  position: fixed;
+}
+
+.crop-btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.showMove {
+  left: 100%;
+}

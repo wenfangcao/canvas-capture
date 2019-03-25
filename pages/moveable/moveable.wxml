@@ -1,0 +1,15 @@
+<View class="wrapper">
+  <canvas canvas-id="canvas" style="width: {{canvas.width}}; height: {{canvas.height}}; transform: translate(-100%, -100%);"></canvas>
+  <movable-area wx:if="{{showMove}}" class="movable-area" scale-area >
+    <movable-view x="{{offset.x}}" y="{{offset.y}}" animation="{{false}}" style="width:{{img.width}}rpx;height:{{img.height}}rpx;" class="move-view" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="3" out-of-bounds>
+      <image class="head-img" src="{{img.url}}" style="width:{{img.width}}rpx;height:{{img.height}}rpx;"></image>
+    </movable-view>
+    <movable-view animation="{{false}}" x="{{offsetLine.x}}" y="{{offsetLine.y}}" direction="none" class="line-view">
+      <View class="line" bindtouchstart="touchLineStart" bindtouchmove="onChangeLine" style="left:{{(W-line.width)/2}}rpx; top:{{(H-line.height)/2}}rpx">
+        <image style="left:{{W/2 - 270}}rpx; top:{{H/2-270}}rpx" class="line-img" src="/assets/imgs/head5.png"></image>
+      </View>
+    </movable-view>
+  </movable-area>
+  <button bindtap='drawImg' class="crop-btn">裁剪</button>
+</View>
+

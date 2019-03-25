@@ -1,0 +1,11 @@
+<!--pages/canvas/canvas.wxml-->
+<View>
+<canvas bindtouchstart='touchstart' bindtouchmove="touchmove" bindtouchend="touchend" class="original-canvas" canvas-id="originalCanvas" style="width:{{originalCanvas.originalSize.width}}px;height:{{originalCanvas.originalSize.height}}px;"></canvas>
+<!-- <movable-area class="movable-area" scale-area>
+    <movable-view direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.1" scale-max="10" scale-value="2" out-of-bounds="true">
+      <image class="img" src="{{img}}"></image>
+    </movable-view>
+</movable-area> -->
+<!-- <canvas class="move-canvas" canvas-id="moveCanvas" style="width:{{moveCanvas.moveSize.width}}px;height:{{moveCanvas.moveSize.height}}px;" wx:if="{{showHover}}"></canvas> -->
+<button class="toggle-btn" bindtap="toggleHover">toggleHover</button>
+</View>

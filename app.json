@@ -1,8 +1,11 @@
 {
   "pages": [
+    "pages/moveable/moveable",
+    "pages/canvas/canvas",
+    "pages/webView/webView",
+    "pages/corp/corp",
     "pages/index/index",
-    "pages/open/open",
-    "pages/webView/webView"
+    "pages/open/open"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,16 +16,16 @@
   "tabBar": {
     "list": [
       {
+        "pagePath": "pages/corp/corp",
+        "text": "截图"
+      },
+      {
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "pagePath": "pages/open/open",
-        "text": "放大"
-      },
-      {
-        "pagePath": "pages/webView/webView",
-        "text": "webView"
+        "pagePath": "pages/moveable/moveable",
+        "text": "moveable"
       }
     ]
   }
