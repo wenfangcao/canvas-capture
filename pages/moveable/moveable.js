@@ -115,21 +115,14 @@ Page({
   },
   drawImg () {
     let ctx = wx.createCanvasContext('canvas', this)
-    // ctx.setFillStyle('#fff')
-    // ctx.fillRect(0, 0, this.data.W * 4, this.data.H * 4)
-    // ctx.draw()
-    // ctx.moveTo(0, 0)
-    // ctx.lineTo(0, this.data.H * 4)
-    // ctx.lineTo(this.data.W * 4, this.data.H * 4)
-    // ctx.lineTo(this.data.W * 4, 0)
-    // ctx.lineTo(0, 0)
-    // ctx.setFillStyle('red')
-    // ctx.fill()
-    // ctx.draw()
     let { url, x, y, width, height } = this.data.img
     width *= this.data.scale
     height *= this.data.scale
+    ctx.setFillStyle('#fff')
+    ctx.fillRect(0, 0, this.data.W * 4, this.data.H * 4)
+    ctx.save()
     ctx.drawImage(url, x, y, width, height)
+    ctx.restore()
     ctx.draw(false, () => {
       this.cropImage()
     })

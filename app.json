@@ -4,8 +4,7 @@
     "pages/canvas/canvas",
     "pages/webView/webView",
     "pages/corp/corp",
-    "pages/index/index",
-    "pages/open/open"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
